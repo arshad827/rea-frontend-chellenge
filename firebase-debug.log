@@ -1,0 +1,31 @@
+[debug] [2020-10-29T15:08:04.399Z] ----------------------------------------------------------------------
+[debug] [2020-10-29T15:08:04.401Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-10-29T15:08:04.401Z] CLI Version:   8.13.1
+[debug] [2020-10-29T15:08:04.401Z] Platform:      darwin
+[debug] [2020-10-29T15:08:04.401Z] Node Version:  v12.13.1
+[debug] [2020-10-29T15:08:04.402Z] Time:          Thu Oct 29 2020 23:08:04 GMT+0800 (Malaysia Time)
+[debug] [2020-10-29T15:08:04.402Z] ----------------------------------------------------------------------
+[debug] [2020-10-29T15:08:04.403Z] 
+[debug] [2020-10-29T15:08:04.412Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-29T15:08:04.413Z] > authorizing via signed-in user
+[debug] [2020-10-29T15:08:04.413Z] [iam] checking project rea-frontend-chellenge for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-29T15:08:04.428Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/rea-frontend-chellenge:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-29T15:08:08.559Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Oct 2020 15:08:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1003","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-29T15:08:08.563Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/rea-frontend-chellenge  
+ 
+[debug] [2020-10-29T15:08:08.883Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Oct 2020 15:08:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'rea-frontend-chellenge'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-29T15:08:08.891Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/rea-frontend-chellenge/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-29T15:08:10.902Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 29 Oct 2020 15:08:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[rea-frontend-chellenge]: beginning deploy... 
+[info] i  hosting[rea-frontend-chellenge]: found 10 files in dist/curve-to-frontend-chellenge 
+[debug] [2020-10-29T15:08:10.919Z] [hosting] hash cache [ZGlzdC9jdXJ2ZS10by1mcm9udGVuZC1jaGVsbGVuZ2U] not populated
+[debug] [2020-10-29T15:08:11.001Z] [hosting] hash cache [ZGlzdC9jdXJ2ZS10by1mcm9udGVuZC1jaGVsbGVuZ2U] stored for 10 files
+[debug] [2020-10-29T15:08:11.002Z] [hosting][hash queue][FINAL] {"max":74,"min":25,"avg":38.3,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":82}
+[debug] [2020-10-29T15:08:11.003Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/rea-frontend-chellenge/versions/bd71788b3f2bb547:populateFiles  
+ <request body omitted>

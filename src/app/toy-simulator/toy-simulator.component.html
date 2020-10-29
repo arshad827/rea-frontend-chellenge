@@ -1,0 +1,41 @@
+<div class="toy_parent">
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>X</mat-label>
+      <mat-select formControlName="x">
+        <mat-option *ngFor="let item of x" [value]="item">{{item}}</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Y</mat-label>
+      <mat-select formControlName="y">
+        <mat-option *ngFor="let item of y" [value]="item">{{item}}</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Direction</mat-label>
+      <mat-select formControlName="direction">
+        <mat-option *ngFor="let item of direction" [value]="item">{{item}}</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+
+    <button mat-button color="primary" type="submit">Place</button>
+    <button mat-button type="button" (click)="move()">Move</button>
+    <button mat-button type="button" (click)="report()">Report</button>
+
+
+    <button mat-button type="button" (click)="left()">Left</button>
+    <button mat-button type="button" (click)="right()">Right</button> 
+
+  </form>
+  <br>
+  <h3>{{currentLocation |  json}}</h3>
+</div>

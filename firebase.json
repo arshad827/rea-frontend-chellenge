@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/curve-to-frontend-chellenge",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
